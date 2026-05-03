@@ -28,6 +28,7 @@ A simple and responsive **Weather Application** that allows users to search for 
 
 
 
+
 ### 🔎 Search Interface
 
 
