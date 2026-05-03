@@ -1,0 +1,205 @@
+
+
+
+
+
+
+
+
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+https://api.openweathermap.org/data/2.5/weather?units=metric&q=lucknow&appid=6626f3870c8fd64ddbacbe076caf124b
+
+
+
+
+key----
+-------
+
+6626f3870c8fd64ddbacbe076caf124b
+
+
+
+const apikey="3118369250a1ee71b3fe8135535d62b3";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//window.alert("hey google");
+async function w(){
+    //window.alert("suyadjshj");
+    const city=document.querySelector('#search>input');
+    //console.log(city);
+    if(city==""){
+        alert("Please enter city Name");
+    }
+    else{
+        const apikey="6626f3870c8fd64ddbacbe076caf124b";
+        //use back tick ``
+        const url=`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apikey}`;
+        let res =await fetch(url);
+        console.log(res);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+async function w(){
+    // window.alert("ankit");
+ const city=document.querySelector('#search>input').value 
+ if(city==""){
+     alert ("Please enter a city name");
+ 
+ }
+ else{
+     const apikey="4563bfa12bf3e5b509818c73d035205b";
+     const url=https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apikey};
+ let res=await fetch(url);
+ console.log(res);
+ }
+ console.log(city);
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+async function w(){
+    // window.alert("ankit");
+ const city=document.querySelector('#search>input').value 
+ if(city==""){
+     alert ("Please enter a city name");
+ 
+ }
+ else{
+     const apikey="4563bfa12bf3e5b509818c73d035205b";
+     const url=https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apikey};
+ let res=await fetch(url);
+ console.log(res);
+ }
+ console.log(city);
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+async function w() {
+    const city = document.querySelector('#search>input').value;
+    
+    if (city == "") {
+        alert("Please enter city name");
+    } else {
+        const apikey = "6626f3870c8fd64ddbacbe076caf124b";
+        const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apikey}`;
+        
+        let res = await fetch(url);
+        let data = await res.json();
+        
+        // Update temperature, city, wind speed, and humidity
+        temp.innerHTML = Math.round(data.main.temp);
+        document.getElementById('city').innerHTML = data.name;
+        wind.innerHTML = data.wind.speed + "Km/h";
+        humidity.innerHTML = data.main.humidity + "%";
+        
+        // Get the detailed weather description and main condition
+        let weatherCondition = data.weather[0].main;
+        let weatherDescription = data.weather[0].description; // More detailed weather description
+        
+        // Update the weather icon based on the detailed description
+        let weatherIcon = document.getElementById('weather-icon');
+        if (weatherDescription === "clear sky") {
+            weatherIcon.src = "./img/clear.png";  // Clear sky icon
+        } else if (weatherDescription === "few clouds") {
+            weatherIcon.src = "./img/clouds.png";  // Cloudy icon
+        } else if (weatherDescription === "broken clouds") {
+            weatherIcon.src = "./img/clouds.png";  // Overcast or broken clouds icon
+        } else if (weatherDescription === "shower rain" ) {
+            weatherIcon.src = "./img/drizzle.png";  // Light rain or shower rain icon
+        } else if (weatherDescription === "moderate rain") {
+            weatherIcon.src = "./img/rain.png";  // Heavy rain icon
+        } else if (weatherCondition === "Snow") {
+            weatherIcon.src = "./img/snow.png";  // Snow icon
+        } else if (weatherDescription === "haze") {
+            weatherIcon.src = "./img/haze.png";  // Haze icon
+        } else if (weatherDescription === "mist") {
+            weatherIcon.src = "./img/mist.png";  // Mist icon
+        } else {
+            weatherIcon.src = "./img/default.png";  // Default icon for unknown conditions
+        }
+        
+        // Update the weather description text
+        document.getElementById('weather-description').innerHTML = weatherDescription.charAt(0).toUpperCase() + weatherDescription.slice(1);
+    }
+}
+
