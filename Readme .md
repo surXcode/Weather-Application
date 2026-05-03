@@ -26,9 +26,11 @@ A simple and responsive **Weather Application** that allows users to search for 
 
 ## 📸 Screenshots
 
-C:\users\ss544\OneDrive\Pictures\Screenshots\Screenshot 2026-05-03 100249.png
+
 
 ### 🔎 Search Interface
+
+
 
 ![Search UI](./screenshots/search.png)
 
