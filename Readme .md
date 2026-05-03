@@ -26,9 +26,6 @@ A simple and responsive **Weather Application** that allows users to search for 
 
 ## 📸 Screenshots
 
-
-
-
 ### 🔎 Search Interface
 
 
