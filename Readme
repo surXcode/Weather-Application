@@ -1,20 +1,50 @@
-🌦️ Weather App
+# 🌦️ Weather App
 
-A simple and responsive Weather Application that allows users to search for any city and view real-time weather information such as temperature, humidity, wind speed, and weather conditions.
+A simple and responsive **Weather Application** that allows users to search for any city and view real-time weather information such as temperature, humidity, wind speed, and weather conditions.
 
-🚀 Features
-🔍 Search weather by city name
-🌡️ Displays real-time temperature (°C)
-💧 Shows humidity percentage
-🌬️ Displays wind speed
-🌥️ Dynamic weather icons based on conditions
-📱 Responsive UI design
-🛠️ Tech Stack
-HTML5
-CSS3
-JavaScript (Vanilla JS)
-OpenWeatherMap API
-📂 Project Structure
+---
+
+## 🚀 Features
+
+* 🔍 Search weather by city name
+* 🌡️ Displays real-time temperature (°C)
+* 💧 Shows humidity percentage
+* 🌬️ Displays wind speed
+* 🌥️ Dynamic weather icons based on conditions
+* 📱 Responsive UI design
+
+---
+
+## 🛠️ Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla JS)
+* OpenWeatherMap API
+
+---
+
+## 📸 Screenshots
+
+C:\users\ss544\OneDrive\Pictures\Screenshots\Screenshot 2026-05-03 100249.png
+
+### 🔎 Search Interface
+
+![Search UI](./screenshots/search.png)
+
+### 🌤️ Weather Display
+
+![Weather UI](./screenshots/weather.png)
+
+### 📱 Mobile View
+
+![Mobile UI](./screenshots/mobile.png)
+
+---
+
+## 📂 Project Structure
+
+```bash id="m9sd82"
 weather-app/
 │── index.html
 │── index1.html
@@ -27,53 +57,52 @@ weather-app/
 │   └── script.js / scripts.js
 │
 ├── img/
-│   ├── clouds.png
-│   ├── rain.png
-│   ├── clear.png
-│   ├── mist.png
-│   ├── haze.png
-│   └── others...
+│   └── (icons)
+│
+├── screenshots/
+│   ├── search.png
+│   ├── weather.png
+│   └── mobile.png
 │
 └── api.txt
-⚙️ How It Works
-User enters a city name in the search box
-App sends a request to the OpenWeatherMap API
-Weather data is fetched using fetch()
-UI updates dynamically with:
-Temperature
-City name
-Humidity
-Wind speed
-Weather icon
-🔑 API Setup
+```
 
-This project uses OpenWeatherMap API.
+---
 
-Steps:
-Go to: https://openweathermap.org/api
-Sign up and get your API key
-Replace the API key in your JavaScript file:
+## ⚙️ How It Works
+
+1. Enter a city name
+2. Fetch data from OpenWeatherMap API
+3. Display weather details dynamically
+
+---
+
+## 🔑 API Setup
+
+```javascript id="k3d8sa"
 const apikey = "YOUR_API_KEY";
-▶️ How to Run the Project
-Clone the repository:
-git clone https://github.com/your-username/weather-app.git
-Open the project folder
-Run using:
-Live Server (recommended) OR
-Open index.html directly in browser
-⚠️ Notes
-Make sure you have a valid API key
-Internet connection is required for API calls
-Some weather conditions may need additional icons
-💡 Future Improvements
-📍 Detect user location automatically
-📅 Add weather forecast (7-day / hourly)
-🌙 Dark mode toggle
-🌎 Multi-language support
-👨‍💻 Author
+```
 
-Your Name
+---
 
-📜 License
+## ▶️ How to Run
 
-This project is open-source and available under the MIT License.
+```bash id="a8d2ks"
+git clone https://github.com/YOUR-USERNAME/weather-app.git
+cd weather-app
+```
+
+Open `index.html` in browser.
+
+---
+
+## 👨‍💻 Author
+
+Suraj Singh
+
+
+---
+
+## 📜 License
+
+MIT License
